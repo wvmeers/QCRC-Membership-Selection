@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import Entrance from "./Pages/Entrance";
+import ResidentStatus from "./Pages/ResidentStatus";
+import Members from "./Pages/Members";
+import MembershipTypes from "./Pages/MembershipTypes";
+import MultiGroup from "./Pages/MultiGroup";
+import MultiQuestions from "./Pages/MultiQuestions";
+import Final from "./Pages/Final";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+    {/* <Route path="/" element={<Members />} /> */}
+    <Route path="/" element={<Entrance />} />
+    <Route path="/Pages/Members" element={<Members />} />
+    <Route path="/Pages/ResidentStatus" element={<ResidentStatus />} />
+    <Route path="/Pages/MembershipTypes" element={<MembershipTypes />} />
+    <Route path="/Pages/MultiGroup" element={<MultiGroup />} />
+    <Route path="/Pages/MultiQuestions" element={<MultiQuestions />} />
+    <Route path="/Pages/Final" element={<Final />} />
+  </Routes>
   );
 }
 
