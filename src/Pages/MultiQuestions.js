@@ -59,7 +59,7 @@ function MultiQuestions() {
       sessionStorage.setItem("main-multi-group", values.mainMultiGroup);
       sessionStorage.setItem("total-multi-group", values.totalMultiGroup);
 
-      navigate("/Pages/Final");
+      navigate("/final");
     },
   });
 

@@ -1,6 +1,7 @@
 import * as React from "react";
 import ".././Styles/GlobalStyles.css";
 import Cube from ".././Images/Cube.png";
+// import { Link } from "react-router-dom";
 
 import { useNavigate } from "react-router-dom";
 
@@ -10,7 +11,7 @@ function Entrance() {
   sessionStorage.removeItem("total");
 
   const handleStart = () => {
-    navigate("/Pages/ResidentStatus");
+    navigate("/resident-status");
   };
 
   return (

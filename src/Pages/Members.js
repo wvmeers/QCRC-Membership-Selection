@@ -19,7 +19,7 @@ function Members() {
   const [, setMembers] = useState();
 
   const handleSubmit = () => {
-    navigate("/Pages/MembershipTypes");
+    navigate("/membership-types");
   };
 
   const handleBack = () => {

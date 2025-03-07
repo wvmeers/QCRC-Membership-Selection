@@ -19,7 +19,7 @@ function Option1() {
   const [, setType] = useState();
 
   const handleSubmit = () => {
-    navigate("/Pages/MultiGroup");
+    navigate("/multi-group");
   };
 
   const handleBack = () => {

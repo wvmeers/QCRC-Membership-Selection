@@ -26,7 +26,7 @@ function Final() {
     sessionStorage.removeItem("multi-group-eligible");
     sessionStorage.removeItem("total-multi-group");
     sessionStorage.removeItem("total");
-    navigate("/Pages/Members");
+    navigate("/members");
   };
 
   const link =

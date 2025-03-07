@@ -32,11 +32,11 @@ function MultiGroup() {
       const { multiGroup } = values;
       sessionStorage.setItem("multi-group-eligible", multiGroup);
       if (multiGroup === "Yes" && total === "1") {
-        navigate("/Final");
+        navigate("/final");
       } else if (multiGroup === "Yes") {
-        navigate("/Pages/MultiQuestions");
+        navigate("/multi-questions");
       } else {
-        navigate("/Pages/Final");
+        navigate("/final");
       }
     },
   });

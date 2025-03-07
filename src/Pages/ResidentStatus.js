@@ -25,12 +25,6 @@ function ResidentStatus() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-//   const handleSubmit = () => {
-//     if (resident === "Yes") {
-//     navigate("/Pages/MembershipTypes");
-//     } else {handleOpen();}
-//   };
-
   const link =
   "https://qcgis.maps.arcgis.com/apps/webappviewer/index.html?id=9cebdb78904d4855b9debd47112322a0";
 
@@ -49,7 +43,7 @@ function ResidentStatus() {
         sessionStorage.setItem("resident", values.resident);
   
         if (values.resident === "Yes") {
-          navigate("/Pages/MembershipTypes"); // Navigate only if Yes
+          navigate("/membership-types"); // Navigate only if Yes
         } else {
           handleOpen(); // Show modal if No
         }
