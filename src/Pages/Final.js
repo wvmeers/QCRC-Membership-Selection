@@ -40,29 +40,23 @@ function Final() {
   const multiTotal = sessionStorage.getItem("total-multi-group");
 
   const handleMembership = () => {
-    if (multi === "No" && total === 1) {
+    if (multi === "No" && total === "1") {
       return `Adult ${type} ${total}-People`;
-    } 
-    else if (multi === "No" && total < 4) {
+    } else if (multi === "No" && total < 4) {
       return `Adult ${type} ${total}-Person`;
-    } 
-    else if (
+    } else if (
       total < 4 &&
       multi === "Yes" &&
       (main === "Yes" || main === "No")
     ) {
       return `Combination ${type} ${total}-Person`;
-    } 
-    else if (total > 3 && multi === "No") {
+    } else if (total > 3 && multi === "No") {
       return `Household ${type} ${total}-Person`;
-    } 
-    else if (total > 3 && all === "No") {
+    } else if (total > 3 && all === "No") {
       return `Household ${type} ${total}-Person`;
-    } 
-    else if (multi === "Yes" && total === 1) {
+    } else if (multi === "Yes" && total === "1") {
       return `Youth/Senior/Active Military/Veteran ${type} ${total}-People`;
-    } 
-    else if (all === "Yes" && total > 1) {
+    } else if (all === "Yes" && total > 1) {
       return `Youth/Senior/Active Military/Veteran ${type} ${total}-Person`;
     }
   };
@@ -83,6 +77,20 @@ function Final() {
         </>
       );
     } else if (multi === "No") {
+      return (
+        <>
+          {" "}
+          <TableRow>
+            <TableCell className="table" align="center">
+              Youth/Senior/Active Military/Veteran Elegible
+            </TableCell>
+            <TableCell className="response" align="center">
+              {multi}
+            </TableCell>
+          </TableRow>
+        </>
+      );
+    } else if (multi === "Yes" && total === "1") {
       return (
         <>
           {" "}
