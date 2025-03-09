@@ -73,7 +73,7 @@
 .h1 {
   color: white;
   position: relative;
-  font-family: cursive;
+  /* font-family: cursive; */
   padding: 20px;
 }
 
@@ -97,6 +97,11 @@
 
 .margin {
   margin-top: 5%;
+}
+
+.resident {
+  font-family: sans-serif;
+  font-weight: 500;
 }
 
 .innerFinal {
@@ -143,7 +148,7 @@
 }
 
 .finalOutput {
-  font-family: cursive;
+  font-family: sans-serif;
   font-weight: bold;
   font-size: 17px;
 }
@@ -164,7 +169,8 @@
 }
 
 .link {
-  font-family: cursive;
+  font-family: sans-serif;
+  font-weight: 500;
   font-size:16pt;
 }
 
@@ -250,6 +256,8 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+  /* font-family: 'Cubano'; */
+  font-weight: bold;
   color: white;
 }
 

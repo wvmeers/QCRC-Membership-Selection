@@ -43,7 +43,7 @@ function ResidentStatus() {
         sessionStorage.setItem("resident", values.resident);
   
         if (values.resident === "Yes") {
-          navigate("/membership-types"); // Navigate only if Yes
+          navigate("/members"); // Navigate only if Yes
         } else {
           handleOpen(); // Show modal if No
         }
@@ -68,7 +68,7 @@ function ResidentStatus() {
             <h3 className="margin">
               Are you a resident of Queen Creek?
             </h3>
-            <p>
+            <p className="resident">
               Unsure? Follow the link to find out.{" "}
               <br />
               <a href={link} target="_blank" rel="noopener noreferrer">
