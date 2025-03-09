@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/QCRC-Membership-Selection/static/css/main.53af2dfe.css",
-    "main.js": "/QCRC-Membership-Selection/static/js/main.056e4bf3.js",
+    "main.css": "/QCRC-Membership-Selection/static/css/main.13dbb927.css",
+    "main.js": "/QCRC-Membership-Selection/static/js/main.3c73cea9.js",
     "static/media/FFP.jpg": "/QCRC-Membership-Selection/static/media/FFP.12fc116a8642a962d259.jpg",
     "static/media/Cube.png": "/QCRC-Membership-Selection/static/media/Cube.c4984a547a509f257cd6.png",
     "static/media/P&R Logo.png": "/QCRC-Membership-Selection/static/media/P&R Logo.9bbddb782703d7f607db.png",
     "index.html": "/QCRC-Membership-Selection/index.html",
-    "main.53af2dfe.css.map": "/QCRC-Membership-Selection/static/css/main.53af2dfe.css.map",
-    "main.056e4bf3.js.map": "/QCRC-Membership-Selection/static/js/main.056e4bf3.js.map"
+    "main.13dbb927.css.map": "/QCRC-Membership-Selection/static/css/main.13dbb927.css.map",
+    "main.3c73cea9.js.map": "/QCRC-Membership-Selection/static/js/main.3c73cea9.js.map"
   },
   "entrypoints": [
-    "static/css/main.53af2dfe.css",
-    "static/js/main.056e4bf3.js"
+    "static/css/main.13dbb927.css",
+    "static/js/main.3c73cea9.js"
   ]
 }
